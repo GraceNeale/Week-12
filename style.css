@@ -1,0 +1,43 @@
+body {
+    background-color: lightblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #302602;
+    text-align: center;
+}
+
+div {
+    background-color: linen;
+    padding: 12px;
+    margin: 15px auto;
+    border-radius: 6px;
+    width: 60%;
+}
+img {
+    width: 90%;
+    max-width: 500px;
+}
+button {
+    background: #302602;
+    color: linen;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    padding: 10px;
+}
+
+body.dark-mode {
+    background-color: #1c0733;
+    color: white;
+}
+body.dark-mode div {
+    background-color: #232323;
+}
+body.dark-mode button {
+    background-color: #232323;
+    border: 2px solid white;
+}
