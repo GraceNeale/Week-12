@@ -5,7 +5,7 @@ body {
     text-align: center;
 }
 
-div {
+.background {
     background-color: linen;
     padding: 12px;
     margin: 15px auto;
@@ -16,7 +16,7 @@ img {
     width: 90%;
     max-width: 500px;
 }
-button {
+.style-toggle {
     background: #302602;
     color: linen;
     border: none;
@@ -34,10 +34,29 @@ body.dark-mode {
     background-color: #1c0733;
     color: white;
 }
-body.dark-mode div {
+body.dark-mode .background {
     background-color: #232323;
 }
-body.dark-mode button {
+body.dark-mode .style-toggle {
     background-color: #232323;
     border: 2px solid white;
+}
+
+
+.faq-answer {
+    display: none;
+}
+.faq-answer.show {
+    display: block;
+}
+.faq-question {
+    background: none;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #302602;
+    font-weight: bold;
+    padding: 10px;
+}
+body.dark-mode .faq-question {
+    color: white;
 }

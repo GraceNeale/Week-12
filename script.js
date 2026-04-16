@@ -1,5 +1,5 @@
 const body = document.querySelector("body");
-const button = document.querySelector("button");
+const button = document.querySelector(".style-toggle");
 const img = document.querySelector("img");
 
 button.addEventListener("click", () => {
@@ -11,4 +11,23 @@ button.addEventListener("click", () => {
     } else {
         img.src = "./cafe.png";
     }
+});
+
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach((question) => {
+    question.addEventListener("click", (event) => {
+
+        let clickedQuestion = event.target;
+
+        questions.forEach((question) => {
+            const answer = question.nextElementSibling;
+            
+            if (question != clickedQuestion) {
+                answer.classList.remove("show")};
+        });
+
+        const answer = question.nextElementSibling;
+        answer.classList.toggle("show");
+  });
 });
